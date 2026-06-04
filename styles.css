@@ -1,0 +1,258 @@
+/* ========================================
+   DARK AI PORTFOLIO THEME
+   Add this at the END of styles.css
+======================================== */
+
+:root{
+    --bg-main:#0b0f19;
+    --bg-section:#111827;
+    --bg-card:#141b2d;
+
+    --accent:#00d4ff;
+    --accent-hover:#4de4ff;
+
+    --text-main:#e6edf3;
+    --text-secondary:#a8b3cf;
+
+    --heading:#ffffff;
+}
+
+/* GENERAL */
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background-color:var(--bg-main);
+    color:var(--text-main);
+}
+
+.page-section{
+    background-color:var(--bg-main);
+}
+
+.bg-dark{
+    background-color:var(--bg-section)!important;
+}
+
+.section-heading{
+    color:var(--heading)!important;
+    font-weight:700;
+}
+
+.section-subheading{
+    color:var(--text-secondary)!important;
+}
+
+p{
+    color:var(--text-secondary);
+}
+
+/* NAVBAR */
+
+#mainNav{
+    background:#0b0f19!important;
+}
+
+#mainNav .navbar-brand{
+    color:var(--accent)!important;
+    font-weight:700;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link{
+    color:white!important;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link:hover{
+    color:var(--accent)!important;
+}
+
+/* HERO */
+
+.masthead{
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.75),
+        rgba(0,0,0,.85)
+    ),
+    url("https://images.unsplash.com/photo-1518770660439-4636190af475");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    align-items:center;
+}
+
+.masthead-subheading{
+    color:var(--accent)!important;
+    font-size:1.6rem;
+    margin-bottom:1rem;
+}
+
+.masthead-heading{
+    color:white!important;
+    text-shadow:none!important;
+}
+
+/* BUTTONS */
+
+.btn-primary{
+    background:var(--accent)!important;
+    border:none!important;
+    color:#000!important;
+    font-weight:700;
+}
+
+.btn-primary:hover{
+    background:var(--accent-hover)!important;
+}
+
+/* SKILLS */
+
+.skill-icon{
+    color:var(--accent);
+    margin-bottom:20px;
+}
+
+#skills h4{
+    color:white;
+}
+
+/* PROJECTS */
+
+.project-card {
+    background: rgba(20, 27, 45, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    border-radius: 16px;
+    padding: 25px;
+    transition: 0.3s ease;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 0 10px rgba(0,212,255,.2),
+    0 0 20px rgba(0,212,255,.2);
+}
+
+.project-card h4{
+    color:white;
+}
+
+.project-card p{
+    color:var(--text-secondary);
+}
+
+/* TIMELINE */
+
+.timeline-item{
+    background:var(--bg-card);
+
+    border-left:4px solid var(--accent);
+
+    padding:20px;
+
+    margin-bottom:20px;
+
+    border-radius:0 10px 10px 0;
+}
+
+.timeline-item h4{
+    color:var(--accent);
+}
+
+.timeline-item p{
+    color:var(--text-secondary);
+}
+
+/* FAVORITES */
+
+#favorites i{
+    color:var(--accent);
+    margin-bottom:15px;
+}
+
+#favorites h4{
+    color:white;
+}
+
+/* CONTACT */
+
+.contact-box{
+    background:var(--bg-card);
+
+    border-radius:15px;
+
+    padding:30px;
+
+    max-width:700px;
+
+    margin:auto;
+}
+
+.contact-box h4{
+    color:white;
+    margin-bottom:20px;
+}
+
+.contact-box p{
+    color:var(--text-secondary);
+}
+
+/* FOOTER */
+
+footer{
+    background:#080c14;
+}
+
+footer p{
+    color:var(--text-secondary);
+    margin:0;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .masthead-heading{
+        font-size:2.2rem!important;
+    }
+
+    .masthead-subheading{
+        font-size:1.2rem!important;
+    }
+
+    .project-card{
+        margin-bottom:20px;
+    }
+
+}
+
+.navbar-shrink {
+    background: rgba(11, 15, 25, 0.9) !important;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.masthead-heading {
+    animation: fadeUp 1s ease-out;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
